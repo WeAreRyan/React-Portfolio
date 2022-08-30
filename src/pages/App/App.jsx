@@ -6,6 +6,9 @@ import { getUser } from "../../utilities/users-service";
 import AuthPage from "../AuthPage/AuthPage";
 import NavBar from "../../components/NavBar/NavBar";
 import Home from "../Home/Home";
+import Work from "../Work/Work"
+import Projects from "../Projects/Projects"
+import About from "../About/About"
 import AboutMe from "../../components/AboutMe/AboutMe";
 
 export default function App() {
@@ -17,6 +20,7 @@ export default function App() {
       {/* {user ? ( */}
         <>
           <NavBar user={user} setUser={setUser} />
+          <div className="container-fluid">
           <AboutMe />
           <Routes>
           <Route
@@ -28,12 +32,42 @@ export default function App() {
                     />
                   }
                 />
+          <Route
+                  path="/work"
+                  element={
+                    <Work
+                      user={user}
+                      setUser={setUser}
+                    />
+                  }
+                />
+          <Route
+                  path="/projects"
+                  element={
+                    <Projects
+                      user={user}
+                      setUser={setUser}
+                    />
+                  }
+                />
+          <Route
+                  path="/about"
+                  element={
+                    <About
+                      user={user}
+                      setUser={setUser}
+                    />
+                  }
+                />
+                
 <Route path="/*" element={<Navigate to="/" />} />
           </Routes>
+          </div>
         </>
       {/* ) : (
         <AuthPage setUser={setUser} />
       )} */}
+      
     </main>
   );
 }

@@ -19,6 +19,9 @@ export default function NavBar({ user, setUser }) {
           <Navbar.Brand href="/work">Work</Navbar.Brand>
         </Container>
         <Container>
+          <Navbar.Brand href="/projects">Projects</Navbar.Brand>
+        </Container>
+        <Container>
           <Navbar.Brand href="/about">About</Navbar.Brand>
         </Container>
       </Navbar>
