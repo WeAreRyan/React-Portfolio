@@ -2,8 +2,9 @@ import { Link } from "react-router-dom";
 import * as userService from "../../utilities/users-service";
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
+import Nav from "react-bootstrap/Nav";
 
-export default function NavBar({ user, setUser }) {
+export default function NavBar({ user, setUser, aboutToggle, showAbout }) {
   function handleLogOut() {
     // Delegate to the users-service
     userService.logOut();
@@ -12,17 +13,13 @@ export default function NavBar({ user, setUser }) {
   return (
     <Container>
       <Navbar expand="sm" variant="dark" bg="dark">
-        <Container>
-          <Navbar.Brand href="#">Ryan Okamoto</Navbar.Brand>
-        </Container>
-        <Container>
-          <Navbar.Brand href="/work">Work</Navbar.Brand>
-        </Container>
-        <Container>
-          <Navbar.Brand href="/projects">Projects</Navbar.Brand>
-        </Container>
-        <Container>
-          <Navbar.Brand href="/about">About</Navbar.Brand>
+      <Container>
+          <Navbar.Brand href="">Ryan Okamoto</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="/projects">Projects</Nav.Link>
+            <Nav.Link href="/work">Work</Nav.Link>
+            <Nav.Link onClick={aboutToggle}>{!showAbout ? "About" : "Hide about"}</Nav.Link>
+          </Nav>
         </Container>
       </Navbar>
     </Container>
