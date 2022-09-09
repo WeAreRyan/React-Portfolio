@@ -10,6 +10,7 @@ import Work from "../Work/Work";
 import Projects from "../Projects/Projects";
 import About from "../About/About";
 import AboutMe from "../../components/AboutMe/AboutMe";
+import Footer from "../../components/Footer/Footer"
 
 export default function App() {
   const [user, setUser] = useState(getUser());
@@ -49,6 +50,7 @@ export default function App() {
 
             <Route path="/*" element={<Navigate to="/" />} />
           </Routes>
+          <Footer />
         </div>
       </>
       {/* ) : (

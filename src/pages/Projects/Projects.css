@@ -8,3 +8,15 @@
     text-decoration: none;
     font-size: 3rem;
 }
+
+.btn-project-link {
+    appearance: button;
+    text-decoration: none;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: grey;
+    color: green;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 1.2rem;
+}

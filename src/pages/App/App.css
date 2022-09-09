@@ -2,6 +2,18 @@
   text-align: center;
 }
 
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  margin-bottom: 8%;
+  margin-top: 3%;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +47,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.scrollbox {
+  height: fit-content;
+  overflow-y: scroll;
 }

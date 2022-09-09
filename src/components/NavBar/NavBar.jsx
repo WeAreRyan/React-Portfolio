@@ -11,10 +11,10 @@ export default function NavBar({ user, setUser, aboutToggle, showAbout }) {
     setUser(null);
   }
   return (
-    <Container>
+    <Container className="fixed-top">
       <Navbar expand="sm" variant="dark" bg="dark">
       <Container>
-          <Navbar.Brand href="">Ryan Okamoto</Navbar.Brand>
+          <Navbar.Brand href="/home">Ryan Okamoto</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="/projects">Projects</Nav.Link>
             <Nav.Link href="/work">Work</Nav.Link>
