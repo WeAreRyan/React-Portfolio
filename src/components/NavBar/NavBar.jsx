@@ -11,7 +11,7 @@ export default function NavBar({ user, setUser, aboutToggle, showAbout }) {
     setUser(null);
   }
   return (
-    <Container className="fixed-top">
+    <Container className="fixed-top silkscreen">
       <Navbar expand="sm" variant="dark" bg="dark">
       <Container>
           <Navbar.Brand href="/home">Ryan Okamoto</Navbar.Brand>

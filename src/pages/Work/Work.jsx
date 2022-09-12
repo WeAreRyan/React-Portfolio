@@ -6,9 +6,10 @@ export default function WORK() {
     return (
     <>
     <div className="container">
-        <div className="row">
-    <h1>WORK PAGE</h1>
-    <Card style={{ width: '46%' }} className="workCard">
+        <div className="row center-content">
+          
+    <h1>Work History</h1>
+    <Card style={{ width: '46%' }} className="shadow workCard">
       <Card.Body>
         <Card.Title>Customer Support Representative</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">Zonar Systems, Inc.</Card.Subtitle>
@@ -26,7 +27,7 @@ export default function WORK() {
       </ListGroup>
       </Card.Body>
     </Card>
-    <Card style={{ width: '46%' }} className="workCard">
+    <Card style={{ width: '46%' }} className="shadow workCard">
       <Card.Body>
         <Card.Title>Integrated Support Team - Tier 2</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">Zonar Systems, Inc.</Card.Subtitle>
@@ -44,7 +45,7 @@ export default function WORK() {
       </ListGroup>
       </Card.Body>
     </Card>
-    <Card style={{ width: '46%' }} className="workCard" >
+    <Card style={{ width: '46%' }} className="shadow workCard" >
       <Card.Body>
         <Card.Title>Customer Support Representative</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">Zonar Systems, Inc.</Card.Subtitle>
@@ -71,6 +72,7 @@ export default function WORK() {
           </button>
     </div>
     </div>
+
     </>
     )
 }

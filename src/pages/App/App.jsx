@@ -27,6 +27,7 @@ export default function App() {
 
   return (
     <main className="App">
+      
       {/* {user ? ( */}
       <>
         <NavBar user={user} setUser={setUser} aboutToggle={aboutToggle} showAbout={showAbout} />

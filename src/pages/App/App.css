@@ -1,3 +1,14 @@
+/* FONT IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+.silkscreen {
+  font-family: 'Silkscreen', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+.jetbrainsmono {
+  font-family: 'JetBrains Mono', sans-serif;
+}
+
+
 .App {
   text-align: center;
 }
@@ -52,4 +63,18 @@ main {
 .scrollbox {
   height: fit-content;
   overflow-y: scroll;
+}
+
+.center-content {
+  justify-content: center;
+}
+
+.banner {
+  font-size: 7rem;
+  margin-bottom: 3rem;
+}
+
+.pos-bot {
+  position: relative;
+  bottom: 0;
 }
