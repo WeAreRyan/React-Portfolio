@@ -4,15 +4,15 @@ export default function Projects() {
   return (
     <>
       <h1 className="silkscreen banner">My Projects</h1>
-      <div className="row h-25 scrollbox">
-        <div className="col-1"></div>
-        <div className="col-3 d-flex">
+      <div className="project-cont">
+      <div className="row d-flex">
+        <div className="col-4 d-flex">
           <div className="d-flex flex-column project-card jetbrainsmono">
             <h2 className="silkscreen">"Solitaire"</h2>
             <div>My first true web application</div>
             <br />
             <img
-              src="https://i.imgur.com/egmRaG2.png"
+              src="./img/solitaire.png"
               className="project-img"
             />
             <br />
@@ -41,13 +41,13 @@ export default function Projects() {
           </div>
         </div>
 
-        <div className="col-3 d-flex">
+        <div className="col-4 d-flex">
           <div className="d-flex flex-column project-card jetbrainsmono">
             <h2 className="silkscreen">Stardew Valley Completion Tracker</h2>
             <div>First time with a framework</div>
             <br />
             <img
-              src="https://i.imgur.com/JDGRCjP.png"
+              src="./img/stardewvalley.png"
               className="project-img"
             />
             <br />
@@ -78,12 +78,12 @@ export default function Projects() {
           </div>
         </div>
 
-        <div className="col-3 d-flex">
+        <div className="col-4 d-flex">
           <div className="d-flex flex-column project-card jetbrainsmono">
             <h2 className="silkscreen">Macro Manager</h2>
             <div>Python, Django and Team Programming</div>
             <br />
-            <img src="https://imgur.com/eO14L3f.png" className="project-img" />
+            <img src="./img/macromanager.png" className="project-img" />
             <br />
             <br />
             <div>
@@ -112,17 +112,16 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        <div className="col-2"></div>
       </div>
       <div className="row">
-        <div className="col-1"></div>
-        <div className="col-3 d-flex">
+
+        <div className="col-4 d-flex">
           <div className="d-flex flex-column project-card jetbrainsmono">
             <h2 className="silkscreen">Rocks-R-Us</h2>
             <div>The capstone project</div>
             <br />
             <img
-              src="https://i.imgur.com/E7kksbL.png"
+              src="./img/rocksrus.png"
               className="project-img"
             />
             <br />
@@ -152,8 +151,8 @@ export default function Projects() {
             </div>
           </div>
         </div>
+        </div>
 
-        <div className="col-2"></div>
       </div>
     </>
   );

@@ -1,3 +1,4 @@
+import "./NavBar.css"
 import { Link } from "react-router-dom";
 import * as userService from "../../utilities/users-service";
 import Container from 'react-bootstrap/Container';
@@ -11,18 +12,25 @@ export default function NavBar({ user, setUser, aboutToggle, showAbout }) {
     setUser(null);
   }
   return (
-    <Container className="fixed-top silkscreen">
-      <Navbar expand="sm" variant="dark" bg="dark">
-      <Container>
+    <>
+
+
+
+
+    {/* <div className="container fixed-top silkscreen"> */}
+
+      <Navbar expand="lg" variant="dark" bg="dark" className="nbpadding">
           <Navbar.Brand href="/home">Ryan Okamoto</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="/projects">Projects</Nav.Link>
             <Nav.Link href="/work">Work</Nav.Link>
-            <Nav.Link onClick={aboutToggle}>{!showAbout ? "About" : "Hide about"}</Nav.Link>
+            <Nav.Link href="/about">About</Nav.Link>
+            {/* <Nav.Link onClick={aboutToggle}>{!showAbout ? "About" : "Hide about"}</Nav.Link> */}
           </Nav>
-        </Container>
       </Navbar>
-    </Container>
+
+    {/* </div> */}
+    </>
   );
 }
 

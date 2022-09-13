@@ -12,34 +12,27 @@ export default function Footer() {
     <div className="container">
     <div className="row">
     <MDBFooter className='bg-dark text-center text-white fixed-bottom'>
-      <MDBContainer className='p-4 pb-0'>
-        <section className='mb-4'>
+      <MDBContainer>
+        <section className='m-4'>
 
 
 
 
-          <MDBBtn outline color="light" floating className='m-1' href='ryan.okamoto.dev@gmail.com' role='button'>
-            <MDBIcon fab icon='google' />
+          <MDBBtn outline color="light" floating className='m-2' href="mailto:okamoto.ryan.dev@gmail.com">
+          <i class="bi bi-envelope"></i>
           </MDBBtn>
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-            <MDBIcon fab icon='instagram' />
-          </MDBBtn>
-
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-            <MDBIcon fab icon='linkedin-in' />
+          <MDBBtn outline color="light" floating className='m-1' href='https://github.com/WeAreRyan' target="_blank">
+          <i class="bi bi-github"></i>
           </MDBBtn>
 
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-            <MDBIcon fab icon='github' />
+          <MDBBtn outline color="light" floating className='m-1' href='https://www.linkedin.com/in/ryan-okamoto-9a8b19222/' target="_blank" role='button'>
+          <i class="bi bi-linkedin"></i>
           </MDBBtn>
         </section>
       </MDBContainer>
 
-      <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-        © 2022 Copyright:
-        <a className='text-white'>
-          Ryan Okamoto
-        </a>
+      <div className='text-center p-2 w-100' style={{ backgroundColor: 'black' }}>
+        © 2022 Copyright
       </div>
     </MDBFooter>
         </div>

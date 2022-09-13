@@ -1,14 +1,13 @@
 export default function About() {
     return (
         <>
- <>
     <div className="aboutMe">
       <div className="row">
         <div className='col-4'>
         <img className="avatar-img" src="./img/avatar.png" />
     </div>
 
-        <div className="col-8">
+        <div className="col-8 jetbrainsmono">
           <br />
           <br />
         <h3 className="silkscreen">About Ryan</h3>
@@ -48,7 +47,6 @@ export default function About() {
 
 
 
-    </>
     </>
     )
 }
